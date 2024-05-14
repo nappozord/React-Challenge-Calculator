@@ -19,12 +19,7 @@ const signs = [
   },
 ];
 
-export default function RowComponent({
-  row,
-  index,
-  updateRow,
-  deleteRow,
-}) {
+export default function RowComponent({ row, index, updateRow, deleteRow }) {
   const handleInputNumberChange = (e) => {
     e = !e ? 0 : e;
     updateRow(index, {
@@ -65,7 +60,11 @@ export default function RowComponent({
         onChange={handleInputNumberChange}
         style={{ width: 150 }}
       />
-      <Tooltip placement="top" mouseEnterDelay={0.5} title={row.disabled ? "Enable row" : "Disable row"}>
+      <Tooltip
+        placement="top"
+        mouseEnterDelay={0.5}
+        title={row.disabled ? "Enable row" : "Disable row"}
+      >
         <Button
           icon={row.disabled ? <EyeInvisibleOutlined /> : <EyeOutlined />}
           onClick={disableRow}
