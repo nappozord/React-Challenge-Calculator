@@ -1,0 +1,11 @@
+.logo {
+  height: 44px;
+  margin-right: 8px;
+}
+
+.header-text {
+  color: #fff;
+  height: 64px;
+  line-height: 64px;
+  font-size: 32px;
+}

@@ -1,26 +1,17 @@
 import React from "react";
+// Import Flex and Typography components from Ant Design
 import { Flex, Typography } from "antd";
 import logo from "../assets/logo.png";
+import "../css/Header.css";
 
+// Destructure Typography to get Text component
 const { Text } = Typography;
-
-const headerStyle = {
-  color: "#fff",
-  height: 64,
-  lineHeight: "64px",
-  fontSize: 32,
-};
 
 export default function HeaderComponent() {
   return (
     <Flex align="center" justify="center">
-      <img
-        src={logo}
-        className="App-logo"
-        alt="logo"
-        style={{ height: 44, marginRight: 8 }}
-      />
-      <Text style={headerStyle}>React Challenge: Calculator</Text>
+      <img src={logo} className="logo" alt="logo" />
+      <Text className="header-text">React Challenge: Calculator</Text>
     </Flex>
   );
 }

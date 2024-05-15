@@ -1,0 +1,12 @@
+.badge {
+  margin-top: 4px;
+}
+
+.result {
+  min-width: 120px;
+  margin: 0 !important;
+}
+
+.carousel {
+  max-width: 120px;
+}
