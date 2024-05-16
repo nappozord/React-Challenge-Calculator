@@ -15,8 +15,8 @@ It has the following functionalities:
 
 ### Libraries and Frameworks
 
-- Javascript front-end framework: [`React`](https://react.dev/)
-- UI library: [`Ant design`](https://ant.design/)
+- Javascript front-end framework: [`React`](https://react.dev/) (v.18.3.1)
+- UI library: [`Ant design`](https://ant.design/) (v.5.17.2)
 
 ## Hot to start
 
