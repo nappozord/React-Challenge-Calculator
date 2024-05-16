@@ -30,6 +30,7 @@ export default function MainComponent({ openNotification }) {
   // Function to update a specific row
   const updateRow = (index, row) => {
     rowList[index] = row; // Update the row at the specified index
+    // Use of the spread operator for shallow copy: ensure re-render
     setRowList([...rowList]); // Set the updated rowList state
   };
 
@@ -37,6 +38,7 @@ export default function MainComponent({ openNotification }) {
   const deleteRow = (index) => {
     if (rowList.length > 2) {
       rowList.splice(index, 1); // Remove the row at the specified index
+      // Use of the spread operator for shallow copy: ensure re-render
       setRowList([...rowList]); // Set the updated rowList state
     } else {
       // Show a warning notification
@@ -64,6 +66,7 @@ export default function MainComponent({ openNotification }) {
       ); // Show another success notification
 
     // Add a new row to the rowList state
+    // Use of the spread operator for shallow copy: ensure re-render
     setRowList([...rowList, { sign: 1, value: 0, disabled: false }]);
   };
 
